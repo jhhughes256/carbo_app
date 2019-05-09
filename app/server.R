@@ -20,9 +20,9 @@
   # Calculate platelet-lymphocyte ratio
     plr <- reactive({
     # Define inputs
-      platelets <- input$pl*10E5
+      platelets <- input$pl
     # Return output using platelet-lymphocyte ratio function
-      lymphocytes <- input$lym*10E3
+      lymphocytes <- input$lym
       return(plr_fn(platelets, lymphocytes))
     })  # reactive_plr
     

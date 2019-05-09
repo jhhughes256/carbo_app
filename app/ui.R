@@ -31,11 +31,11 @@
         numericInput("secr", "Serum Creatinine (umol/L)",
           value = 71
         ),
-        numericInput("pl", HTML("Platelet Count (10<sup>5</sup> cells)"),
-          value = 3
+        numericInput("pl", HTML("Platelet Count (10<sup>9</sup> cells per litre)"),
+          value = 30
         ),  # numericInput_pl
-        numericInput("lym", HTML("Lymphocyte Count (10<sup>3</sup> cells)"),
-          value = 3
+        numericInput("lym", HTML("Lymphocyte Count (10<sup>9</sup> cells per litre)"),
+          value = 0.15
         )  # numericInput.lym
       ),  # box_patientDataInput
       column(width = 4,
