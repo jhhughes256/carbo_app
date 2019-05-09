@@ -18,6 +18,7 @@
     fluidRow(
       box(title = "Patient Data Input", width = 8, status = "primary", 
         solidHeader = T, 
+        withMathJax(),
         numericInput("age", "Age (years)",
           value = 61
         ),  # numericInput_age
@@ -30,11 +31,11 @@
         numericInput("secr", "Serum Creatinine (umol/L)",
           value = 71
         ),
-        numericInput("pl", "Platelet Count",
-          value = 300000
+        numericInput("pl", HTML("Platelet Count (10<sup>5</sup> cells)"),
+          value = 3
         ),  # numericInput_pl
-        numericInput("lym", "Lymphocyte Count",
-          value = 3000
+        numericInput("lym", HTML("Lymphocyte Count (10<sup>3</sup> cells)"),
+          value = 3
         )  # numericInput.lym
       ),  # box_patientDataInput
       column(width = 4,
